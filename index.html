@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AtithiAI — Smart Heritage & Eco-Tourism</title>
+  <link rel="icon" type="image/png" href="./images/logo.png" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            amber: {
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-500 selection:text-slate-950">
+  
+  <!-- NAVBAR MOUNT -->
+  <div id="navbar-mount"></div>
+
+  <!-- MAIN VIEW CONTENT MOUNT -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6" id="main-content-mount">
+    <div class="text-center py-24 text-slate-500">
+      <div class="animate-spin w-8 h-8 border-2 border-amber-500 border-t-transparent rounded-full mx-auto mb-3"></div>
+      <p class="text-xs">Initializing AtithiAI Smart Tourism...</p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="mt-auto border-t border-slate-800/80 bg-slate-950 py-8 text-slate-500 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center space-x-2.5">
+        <img src="./images/logo.png" alt="AtithiAI" class="h-6 w-auto object-contain rounded bg-white p-0.5" />
+        <span class="text-amber-400 font-serif font-bold text-sm">AtithiAI</span>
+        <span>•</span>
+        <span>Karnataka State Tourism & Smart City Initiative</span>
+      </div>
+      <div class="flex items-center space-x-4 text-[11px]">
+        <span>👑 Heritage Certified</span>
+        <span>🌱 Eco-Travel Verified</span>
+        <span>♿ Accessibility Compliant</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL MOUNT -->
+  <div id="modal-mount"></div>
+
+  <!-- AI CHAT DRAWER MOUNT -->
+  <div id="chat-mount"></div>
+
+  <!-- MAIN JAVASCRIPT APPLICATION ENTRYPOINT -->
+  <script type="module" src="./js/app.js?v=20260901_eco_calibrated"></script>
+</body>
+</html>
